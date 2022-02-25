@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Task_3</title>
+</head>
+<body class="bg-info d-flex justify-content-center">
+    <div class="container bg-light w-100 h-100 ml-3 my-3 mx-5 rounded">
+    <div class="row">
+    <div class="col">
+        <div class="d-flex flex-row-reverse py-2 px-4">
+        <button onclick="addRow()" type="button" class="btn btn-outline-danger border-4 rounded font-weight-bold"> ADD NEW</button>
+        </div>
+     <table class="container" id="my_table">
+       <thead class="font-weight-bold">
+           <tr>
+               <th scope="col" class="p-4">
+                <input type="checkbox">
+               </th>
+               <th scope="col">EMPLOYEES</th>
+               <th scope="col">POSITION</th>
+               <th scope="col" class="pr-4">AGE</th>
+               <th scope="col">ADRESS</th>
+               <th scope="col">Close</th>
+            </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td id="check" class="p-4">
+                <input type="checkbox">
+               </td>
+               <td>Tiger Nixon</td>
+               <td>System Architect</td>
+               <td>61</td>
+               <td>Edinburg</td>
+               <td><button onclick="deleteRow(this)" id="btn" type="button" class="btn btn-danger rounded px-3">x</button></td>
+           </tr>
+        <tr> 
+            <td class="p-4">
+             <input type="checkbox"> 
+            </td>
+            <td>Sonya Frost</td>
+            <td>Software Engineer</td>
+            <td>23</td>
+            <td>Edinburg</td>
+            <td><button onclick="deleteRow(this)" type="button" class="btn btn-danger rounded px-3">x</button></td>
+        </tr>
+        <tr>
+            <td class="p-4">
+             <input type="checkbox">
+            </td>
+            <td>Jena Gaines</td>
+            <td>Office Manager</td>
+            <td>30</td>
+            <td>London</td>
+            <td><button onclick="deleteRow(this)" type="button" class="btn btn-danger rounded px-3">x</button></td>
+        </tr>
+        <tr>
+            <td class="p-4">
+             <input type="checkbox"> 
+            </td>
+            <td>Quinn Flyn</td>
+            <td>Support Lead</td>
+            <td>30</td>
+            <td>Edinburg</td>
+            <td><button onclick="deleteRow(this)" type="button" class="btn btn-danger rounded px-3">x</button></td>
+        </tr>
+        <tr>
+            <td class="p-4">
+             <input type="checkbox">
+            </td>
+            <td>Charade Marshall</td>
+            <td>Regional Director</td>
+            <td>36</td>
+            <td>San Franciso</td>
+            <td><button onclick="deleteRow(this)" type="button" class="btn btn-danger rounded px-3">x</button></td>
+        </tr>
+        <tr>
+            <td class="p-4">
+             <input type="checkbox">
+            </td>
+            <td>Haley Kennedy</td>
+            <td>Senior Marketing Desinger</td>
+            <td>43</td>
+            <td>London</td>
+            <td><button onclick="deleteRow(this)" type="button" class="btn btn-danger rounded px-3">x</button></td>
+        </tr>
+        <tr>
+            <td class="p-4">
+             <input type="checkbox">
+            </td>
+            <td>Tatyana Fitzpatrick</td>
+            <td>Regional Director</td>
+            <td>19</td>
+            <td>Warsaw</td>
+            <td><button onclick="deleteRow(this)" type="button" class="btn btn-danger rounded px-3">x</button></td>
+        </tr>
+       </tbody>
+   </table>
+</div>
+</div>
+</div>
+<script src="main.js" defer></script>
+</body>
+</html>
